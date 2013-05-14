@@ -42,7 +42,7 @@ Modify your `/etc/hosts` file. You'll need to add your chosen development domain
 ~~~~~
 
 ## Usage
-The following example assume that your configurable properties are as follows:
+The following examples assume that your configurable properties are as follows:
 
 - _Hostname_: `my-project.dev`
 - _HTTP Port_: `8080`
