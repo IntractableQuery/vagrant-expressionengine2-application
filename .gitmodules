@@ -16,3 +16,12 @@
 [submodule "puppet/modules/composer"]
 	path = puppet/modules/composer
 	url = git://github.com/experience/vagrant-puppet-composer.git
+[submodule "puppet/modules/phpenv"]
+	path = puppet/modules/phpenv
+	url = git@github.com:experience/vagrant-puppet-phpenv.git
+[submodule "puppet/modules/phpbuild"]
+	path = puppet/modules/phpbuild
+	url = git@github.com:experience/vagrant-puppet-phpbuild.git
+[submodule "puppet/modules/git"]
+	path = puppet/modules/git
+	url = git@github.com:experience/vagrant-puppet-git.git
