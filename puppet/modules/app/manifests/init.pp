@@ -1,5 +1,4 @@
 class app {
-
   # -----------------------------------------------------------------
   # CONFIGURABLE PROPERTIES
   # -----------------------------------------------------------------
@@ -8,6 +7,20 @@ class app {
   $db_username   = 'jimbob'
   $db_password   = 'password'
   # -----------------------------------------------------------------
+
+  $bin_path = '/usr/bin:/usr/sbin'
+
+  # -----------------------------------------------------------------
+  # Ensure everything is up-to-date before we begin installing stuff
+  # -----------------------------------------------------------------
+  exec { 'app::update_system':
+    command => 'apt-get update',
+    path    => $app::bin_path,
+  }
+
+  File    { require => Exec['app::update_system'] }
+  Package { require => Exec['app::update_system'] }
+  Service { require => Exec['app::update_system'] }
 
   # -----------------------------------------------------------------
   # Apache
@@ -44,9 +57,6 @@ class app {
   # -----------------------------------------------------------------
   # PHP
   # -----------------------------------------------------------------
-  include 'php'
-  include 'php::pear'
-
   php::extension { [
     'php-pear',
     'php5-curl',
@@ -57,10 +67,7 @@ class app {
     'php5-xdebug',
   ]: }
 
-  php::pear::install { 'phpunit':
-    package => 'pear.phpunit.de/PHPUnit',
-    creates => '/usr/bin/phpunit',
-  }
+  include 'phpqatools'
 
 
   # -----------------------------------------------------------------

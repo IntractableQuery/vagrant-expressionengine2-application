@@ -5,8 +5,8 @@
 # CONFIGURABLE PROPERTIES
 # ------------------------------------------------------------------------
 $hostname  = 'laravel-project-name.dev'
-$http_port = 8080
-$ssh_port  = 2222
+$http_port = 8001
+$ssh_port  = 2001
 # ------------------------------------------------------------------------
 
 Vagrant.configure('2') do |config|
