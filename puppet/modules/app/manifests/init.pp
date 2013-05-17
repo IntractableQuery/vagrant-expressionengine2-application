@@ -67,10 +67,7 @@ class app {
     'php5-xdebug',
   ]: }
 
-  php::pear::install { 'phpunit':
-    package => 'pear.phpunit.de/PHPUnit',
-    creates => '/usr/bin/phpunit',
-  }
+  include 'phpqatools'
 
 
   # -----------------------------------------------------------------
