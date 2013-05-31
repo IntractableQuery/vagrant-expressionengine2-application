@@ -67,14 +67,10 @@ class app {
     'php5-xdebug',
   ]: }
 
-  include 'phpqatools'
-  include 'phpdoc'
-
 
   # -----------------------------------------------------------------
   # Oddments
   # -----------------------------------------------------------------
   include 'curl'
-  include 'composer'
 }
 
