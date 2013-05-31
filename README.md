@@ -1,5 +1,5 @@
-# Vagrant Laravel Application
-Basic development server for ExpressionEngine applications. Uses the standard Vagrant Ubuntu Precise base box (`precise64.box`).
+# Vagrant ExpressionEngine 2 Application
+Basic development server for ExpressionEngine 2.x applications. Uses the standard Vagrant Ubuntu Precise base box (`precise64.box`).
 
 ## Requirements
 As you might expect, in order for this to work you need:
