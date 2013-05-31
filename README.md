@@ -1,11 +1,11 @@
 # Vagrant Laravel Application
-Basic development server for Laravel applications. Uses the standard Vagrant Ubuntu Precise base box (`precise64.box`).
+Basic development server for ExpressionEngine applications. Uses the standard Vagrant Ubuntu Precise base box (`precise64.box`).
 
 ## Requirements
 As you might expect, in order for this to work you need:
 
 1. [Vagrant][vagrant];
-2. A Laravel 4 project.
+2. An ExpressionEngine project.
 
 [vagrant]: http://vagrantup.com/
 
@@ -18,20 +18,20 @@ You may customise the server for your application using the clearly marked "conf
 ## Getting started
 1. Download the repository ZIP file;
 2. Unzip it;
-3. Copy the files to the root of your Laravel 4 application;
+3. Copy the files to the root of your ExpressionEngine application;
 4. Run `vagrant up`;
 5. Wait a while.
 
 ### What it does
-Creates a virtual machine running a basic LAMP stack, configured to work with your Laravel 4 application.
+Creates a virtual machine running a basic LAMP stack, configured to work with your ExpressionEngine application.
 
 In addition to the standard LAMP installation, we:
 
 - Create a database and user, as per the settings in `/puppet/modules/app/manifests/init.pp`;
-- Install Composer globally;
-- Install PHPUnit;
-- Install some useful PHP extensions, including `mcrpyt` (required by Laravel), and `sqlite` (required for unit testing);
-- Set the correct ownership and permissions on the `app/storage` directory.
+- Install some useful PHP extensions, including `gd` (required by ExpressionEngine);
+- Set the correct ownership and file permissions as per the [ExpressionEngine installation instructions][ee_install].
+
+[ee_install]: http://ellislab.com/expressionengine/user-guide/installation/installation.html
 
 ### What it doesn't do
 Modify your `/etc/hosts` file. You'll need to add your chosen development domain, as follows:
