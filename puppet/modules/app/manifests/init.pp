@@ -72,5 +72,6 @@ class app {
   # Oddments
   # -----------------------------------------------------------------
   include 'curl'
+  include 'expressionengine'
 }
 
