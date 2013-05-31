@@ -13,15 +13,6 @@
 [submodule "puppet/modules/curl"]
 	path = puppet/modules/curl
 	url = git@github.com:experience/vagrant-puppet-curl.git
-[submodule "puppet/modules/composer"]
-	path = puppet/modules/composer
-	url = git@github.com:experience/vagrant-puppet-composer.git
 [submodule "puppet/modules/git"]
 	path = puppet/modules/git
 	url = git@github.com:experience/vagrant-puppet-git.git
-[submodule "puppet/modules/phpqatools"]
-	path = puppet/modules/phpqatools
-	url = git@github.com:experience/vagrant-puppet-phpqatools.git
-[submodule "puppet/modules/phpdoc"]
-	path = puppet/modules/phpdoc
-	url = git@github.com:experience/vagrant-puppet-phpdoc.git
