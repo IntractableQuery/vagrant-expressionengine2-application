@@ -5,7 +5,7 @@ Basic development server for ExpressionEngine 2.x applications. Uses the standar
 As you might expect, in order for this to work you need:
 
 1. [Vagrant][vagrant];
-2. An ExpressionEngine project.
+2. An ExpressionEngine 2 project.
 
 [vagrant]: http://vagrantup.com/
 
@@ -18,7 +18,7 @@ You may customise the server for your application using the clearly marked "conf
 ## Getting started
 1. Download the repository ZIP file;
 2. Unzip it;
-3. Copy the files to the root of your ExpressionEngine application;
+3. Copy the files to the root of your ExpressionEngine 2 application;
 4. Run `vagrant up`;
 5. Wait a while.
 
@@ -28,8 +28,8 @@ Creates a virtual machine running a basic LAMP stack, configured to work with yo
 In addition to the standard LAMP installation, we:
 
 - Create a database and user, as per the settings in `/puppet/modules/app/manifests/init.pp`;
-- Install some useful PHP extensions, including `gd` (required by ExpressionEngine);
-- Set the correct ownership and file permissions as per the [ExpressionEngine installation instructions][ee_install].
+- Install some useful PHP extensions, including `gd` (required by ExpressionEngine 2);
+- Set the correct ownership and file permissions as per the [ExpressionEngine 2 installation instructions][ee_install].
 
 [ee_install]: http://ellislab.com/expressionengine/user-guide/installation/installation.html
 
