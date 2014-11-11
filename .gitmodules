@@ -1,9 +1,6 @@
 [submodule "puppet/bootstrap"]
 	path = puppet/bootstrap
 	url = git@github.com:experience/vagrant-bootstrap.git
-[submodule "puppet/modules/apache"]
-	path = puppet/modules/apache
-	url = git@github.com:experience/vagrant-puppet-apache.git
 [submodule "puppet/modules/mysql"]
 	path = puppet/modules/mysql
 	url = git@github.com:experience/vagrant-puppet-mysql.git

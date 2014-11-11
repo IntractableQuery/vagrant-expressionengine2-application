@@ -1,0 +1,23 @@
+# -----------------------------------------------
+# Managed by Puppet
+# -----------------------------------------------
+
+NameVirtualHost *:80
+
+<VirtualHost *:80>
+  ServerName <%= @hostname %>
+  DocumentRoot /vagrant/public
+
+  <Directory /vagrant/public>
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride None
+    Order allow,deny
+    allow from all
+  </Directory>
+
+  ErrorLog /var/log/apache2/<%= @hostname %>_error.log
+  LogLevel warn
+  CustomLog /var/log/apache2/<%= @hostname %>_access.log combined
+  ServerSignature Off
+</VirtualHost>
+

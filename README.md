@@ -16,8 +16,8 @@ You may customise the server for your application using the clearly marked "conf
 - `/puppet/modules/app/manifests/init.pp`
 
 ## Getting started
-1. Download the repository ZIP file;
-2. Unzip it;
+1a. If using zip: Download the repository ZIP file and unzip it
+1b. If using git clone: Clone and run "git submodule init && git submodule update"
 3. Copy the files to the root of your ExpressionEngine 2 application;
 4. Run `vagrant up`;
 5. Wait a while.
