@@ -6,9 +6,9 @@ NameVirtualHost *:80
 
 <VirtualHost *:80>
   ServerName <%= @hostname %>
-  DocumentRoot /vagrant/public
+  DocumentRoot /vagrant
 
-  <Directory /vagrant/public>
+  <Directory /vagrant>
     Options Indexes FollowSymLinks MultiViews
     AllowOverride None
     Order allow,deny
